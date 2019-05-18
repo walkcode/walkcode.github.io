@@ -1,0 +1,1535 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>学习总结</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+/* Flowchart variables */
+/* Sequence Diagram variables */
+/* Gantt chart variables */
+.mermaid .label {
+  color: #323D47;
+}
+
+g.label {
+    color: #333;
+}
+
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon {
+  fill: #BDD5EA;
+  stroke: #81B1DB;
+  stroke-width: 1px;
+}
+.edgePath .path {
+  stroke: lightgrey;
+}
+.edgeLabel {
+  background-color: #e8e8e8;
+}
+.cluster rect {
+  fill: #6D6D65 !important;
+  rx: 4 !important;
+  stroke: rgba(255, 255, 255, 0.25) !important;
+  stroke-width: 1px !important;
+}
+.cluster text {
+  fill: #F9FFFE;
+}
+.actor {
+  stroke: #81B1DB;
+  fill: #BDD5EA;
+}
+text.actor {
+  fill: black;
+  stroke: none;
+}
+.actor-line {
+  stroke: lightgrey;
+}
+.messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: "2 2";
+  marker-end: "url(file:///Users/Aaron/Library/Application%20Support/abnerworks.Typora/themes/night/#arrowhead)";
+  stroke: lightgrey;
+}
+.messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: "2 2";
+  stroke: lightgrey;
+}
+#arrowhead {
+  fill: lightgrey !important;
+}
+#crosshead path {
+  fill: lightgrey !important;
+  stroke: lightgrey !important;
+}
+.messageText {
+  fill: lightgrey;
+  stroke: none;
+}
+.labelBox {
+  stroke: #81B1DB;
+  fill: #BDD5EA;
+}
+.labelText {
+  fill: #323D47;
+  stroke: none;
+}
+.loopText {
+  fill: lightgrey;
+  stroke: none;
+}
+text>tspan {
+  fill: inherit;
+}
+.loopLine {
+  stroke-width: 2;
+  stroke-dasharray: "2 2";
+  marker-end: "url(file:///Users/Aaron/Library/Application%20Support/abnerworks.Typora/themes/night/#arrowhead)";
+  stroke: #81B1DB;
+}
+.note {
+  stroke: rgba(255, 255, 255, 0.25);
+  fill: #fff5ad;
+}
+.noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px;
+}
+/** Section styling */
+.section {
+  stroke: none;
+  opacity: 0.2;
+}
+.section0 {
+  fill: rgba(255, 255, 255, 0.3);
+}
+.section2 {
+  fill: #EAE8B9;
+}
+.section1,
+.section3 {
+  fill: white;
+  opacity: 0.2;
+}
+.sectionTitle0 {
+  fill: #F9FFFE;
+}
+.sectionTitle1 {
+  fill: #F9FFFE;
+}
+.sectionTitle2 {
+  fill: #F9FFFE;
+}
+.sectionTitle3 {
+  fill: #F9FFFE;
+}
+.sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+}
+/* Grid and axis */
+.grid .tick {
+  stroke: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
+  shape-rendering: crispEdges;
+}
+.grid .tick text {
+  fill: lightgrey;
+  opacity: 0.5;
+}
+.grid path {
+  stroke-width: 0;
+}
+/* Today line */
+.today {
+  fill: none;
+  stroke: #DB5757;
+  stroke-width: 2px;
+}
+/* Task styling */
+/* Default task */
+.task {
+  stroke-width: 1;
+}
+.taskText {
+  text-anchor: middle;
+  font-size: 11px;
+}
+.taskTextOutsideRight {
+  fill: #323D47;
+  text-anchor: start;
+  font-size: 11px;
+}
+.taskTextOutsideLeft {
+  fill: #323D47;
+  text-anchor: end;
+  font-size: 11px;
+}
+/* Specific task settings for the sections*/
+.taskText0,
+.taskText1,
+.taskText2,
+.taskText3 {
+  fill: #323D47;
+}
+.task0,
+.task1,
+.task2,
+.task3 {
+  fill: #BDD5EA;
+  stroke: rgba(255, 255, 255, 0.5);
+}
+.taskTextOutside0,
+.taskTextOutside2 {
+  fill: lightgrey;
+}
+.taskTextOutside1,
+.taskTextOutside3 {
+  fill: lightgrey;
+}
+/* Active task */
+.active0,
+.active1,
+.active2,
+.active3 {
+  fill: #81B1DB;
+  stroke: rgba(255, 255, 255, 0.5);
+}
+.activeText0,
+.activeText1,
+.activeText2,
+.activeText3 {
+  fill: #323D47 !important;
+}
+/* Completed task */
+.done0,
+.done1,
+.done2,
+.done3 {
+  fill: lightgrey;
+}
+.doneText0,
+.doneText1,
+.doneText2,
+.doneText3 {
+  fill: #323D47 !important;
+}
+/* Tasks on the critical line */
+.crit0,
+.crit1,
+.crit2,
+.crit3 {
+  stroke: #E83737;
+  fill: #E83737;
+  stroke-width: 2;
+}
+.activeCrit0,
+.activeCrit1,
+.activeCrit2,
+.activeCrit3 {
+  stroke: #E83737;
+  fill: #81B1DB;
+  stroke-width: 2;
+}
+.doneCrit0,
+.doneCrit1,
+.doneCrit2,
+.doneCrit3 {
+  stroke: #E83737;
+  fill: lightgrey;
+  stroke-width: 1;
+  cursor: pointer;
+  shape-rendering: crispEdges;
+}
+.doneCritText0,
+.doneCritText1,
+.doneCritText2,
+.doneCritText3 {
+  fill: lightgrey !important;
+}
+.activeCritText0,
+.activeCritText1,
+.activeCritText2,
+.activeCritText3 {
+  fill: #323D47 !important;
+}
+.titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: lightgrey;
+}
+/*
+
+
+*/
+.node text {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px;
+}
+div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 12px;
+  background: #6D6D65;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+/** code highlight */
+
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-operator,
+.cm-s-inner .cm-property {
+    color: #b8bfc6;
+}
+
+.cm-s-inner .cm-keyword {
+    color: #C88FD0;
+}
+
+.cm-s-inner .cm-tag {
+    color: #7DF46A;
+}
+
+.cm-s-inner .cm-attribute {
+    color: #7575E4;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid #b8bfc6;
+    z-index: 3;
+}
+
+.cm-s-inner .cm-string {
+    color: #D26B6B;
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: #DA924A;
+}
+
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-header,
+.cm-s-inner.cm-def {
+    color: #8d8df0;
+}
+
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: #57ac57;
+}
+
+.cm-s-inner .cm-hr {
+    color: #d8d5d5;
+}
+
+.cm-s-inner .cm-link {
+    color: #d3d3ef;
+}
+
+.cm-s-inner .cm-negative {
+    color: #d95050;
+}
+
+.cm-s-inner .cm-positive {
+    color: #50e650;
+}
+
+.cm-s-inner .cm-string-2 {
+    color: #f50;
+}
+
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: #b7b3b3;
+}
+
+.cm-s-inner .cm-builtin {
+    color: #f3b3f8;
+}
+
+.cm-s-inner .cm-bracket {
+    color: #997;
+}
+
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: #84B6CB;
+}
+
+.cm-s-inner .cm-number {
+    color: #64AB8F;
+}
+
+.cm-s-inner .cm-variable {
+    color: #b8bfc6;
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: #9FBAD5;
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: #1cc685;
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: #4a89dc;
+    color: #fff !important;
+    text-shadow: none;
+}
+
+.CodeMirror-gutters {
+    border-right: none;
+}
+@charset "UTF-8";
+/* CSS Document */
+
+/** markdown source **/
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property
+{
+    color: #cebcca;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor{
+    border-left: 3px solid #b8bfc6;
+}
+
+.cm-s-typora-default .cm-comment {
+    color: #9FB1FF;
+}
+
+.cm-s-typora-default .cm-string {
+    color: #A7A7D9
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+    color: #848695;
+    font-style: italic;
+}
+
+.cm-s-typora-default .cm-link {
+    color: #95B94B;
+}
+
+.cm-s-typora-default .CodeMirror-activeline-background {
+    background: rgba(51, 51, 51, 0.72);
+}
+
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
+	color: #8aa1e1;
+}@import "";
+@import "";
+@import "";
+
+:root {
+    --bg-color:  #363B40;
+    --side-bar-bg-color: #2E3033;
+    --text-color: #b8bfc6;
+
+    --select-text-bg-color:#4a89dc;
+
+    --item-hover-bg-color: #0a0d16;
+    --control-text-color: #b7b7b7;
+    --control-text-hover-color: #eee;
+    --window-border: 1px solid #555;
+
+    --active-file-bg-color: rgb(34, 34, 34);
+    --active-file-border-color: #8d8df0;
+
+    --primary-color: #a3d5fe;
+
+    --active-file-text-color: white;
+    --item-hover-bg-color: #70717d;
+    --item-hover-text-color: white;
+    --primary-color: #6dc1e7;
+
+    --rawblock-edit-panel-bd: #4B535A;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background: #363B40;
+    background: var(--bg-color);
+    fill: currentColor;
+}
+
+#write {
+    max-width: 914px;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea,
+div.code-tooltip-content {
+    color: #b8bfc6;
+    border-color: transparent;
+}
+
+div.code-tooltip,
+.md-hover-tip .md-arrow:after {
+    background: #4B535A;
+}
+
+.popover.bottom > .arrow:after {
+    border-bottom-color: #4B535A;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+    font-style: normal;
+    line-height: 1.625rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr {
+    height: 2px;
+    border: 0;
+    margin: 24px 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lucida Grande", "Corbel", sans-serif;
+    font-weight: normal;
+    clear: both;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    color: #DEDEDE
+}
+
+h1 {
+    font-size: 2.5rem;
+    /* 36px */
+    line-height: 2.75rem;
+    /* 40px */
+    margin-bottom: 1.5rem;
+    /* 24px */
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    font-size: 1.63rem;
+    /* 24px */
+    line-height: 1.875rem;
+    /* 30px */
+    margin-bottom: 1.5rem;
+    /* 24px */
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.17rem;
+    /* 18px */
+    line-height: 1.5rem;
+    /* 24px */
+    margin-bottom: 1.5rem;
+    /* 24px */
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.12rem;
+    /* 16px */
+    line-height: 1.375rem;
+    /* 22px */
+    margin-bottom: 1.5rem;
+    /* 24px */
+    color: white;
+}
+
+h5 {
+    font-size: 0.97rem;
+    /* 16px */
+    line-height: 1.25rem;
+    /* 22px */
+    margin-bottom: 1.5rem;
+    /* 24px */
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 0.93rem;
+    /* 16px */
+    line-height: 1rem;
+    /* 16px */
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+@media (min-width: 980px) {
+    h3.md-focus:before,
+    h4.md-focus:before,
+    h5.md-focus:before,
+    h6.md-focus:before {
+        color: #ddd;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        position: absolute;
+        left: -1.642857143rem;
+        top: .357142857rem;
+        float: left;
+        font-size: 9px;
+        padding-left: 2px;
+        padding-right: 2px;
+        vertical-align: bottom;
+        font-weight: normal;
+        line-height: normal;
+    }
+
+    h3.md-focus:before {
+        content: 'h3';
+    }
+
+    h4.md-focus:before {
+        content: 'h4';
+    }
+
+    h5.md-focus:before {
+        content: 'h5';
+        top: 0px;
+    }
+
+    h6.md-focus:before {
+        content: 'h6';
+        top: 0px;
+    }
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover {
+    outline: 0;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+sup.md-footnote {
+    background-color: #555;
+    color: #ddd;
+}
+
+p {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+p,
+ul,
+dd,
+ol,
+hr,
+address,
+pre,
+table,
+iframe,
+.wp-caption,
+.wp-audio-shortcode,
+.wp-video-shortcode {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    /* 24px */
+}
+
+li > blockquote {
+	margin-bottom: 0;
+}
+
+audio:not([controls]) {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+::-moz-selection {
+    background: #4a89dc;
+    color: #fff;
+    text-shadow: none;
+}
+
+*.in-text-selection,
+::selection {
+    background: #4a89dc;
+    color: #fff;
+    text-shadow: none;
+}
+
+ul,
+ol {
+    padding: 0 0 0 1.875rem;
+    /* 30px */
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin: 0;
+}
+
+b,
+th,
+dt,
+strong {
+    font-weight: bold;
+}
+
+i,
+em,
+dfn,
+cite {
+    font-style: italic;
+}
+
+blockquote {
+    padding-left: 1.875rem;
+    margin: 0 0 1.875rem 1.875rem;
+    border-left: solid 2px #474d54;
+    padding-left: 30px;
+    margin-top: 35px;
+}
+
+pre,
+code,
+kbd,
+tt,
+var {
+    background: rgba(0, 0, 0, 0.05);
+    font-size: 0.875rem;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+}
+
+pre.md-fences {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+.md-fences .code-tooltip {
+    bottom: -3.2em;
+}
+
+.enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip,
+.enable-diagrams pre.md-fences[lang="flow"] .code-tooltip,
+.enable-diagrams pre.md-fences[lang="mermaid"] .code-tooltip {
+    bottom: -2.2em;
+    right: 4px;
+}
+
+code,
+kbd,
+tt,
+var {
+    padding: 2px 5px;
+}
+
+table {
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 5px 10px;
+    vertical-align: top;
+}
+
+a {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+hr {
+    background: #474d54;
+    /* variable */
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+a {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.md-inline-math script {
+    color: #81b1db;
+}
+
+b,
+th,
+dt,
+strong {
+    color: #DEDEDE;
+    /* variable */
+}
+
+mark {
+    background: #D3D40E;
+}
+
+blockquote {
+    color: #9DA2A6;
+}
+
+table a {
+    color: #DEDEDE;
+    /* variable */
+}
+
+th,
+td {
+    border: solid 1px #474d54;
+    /* variable */
+}
+
+.task-list {
+    padding-left: 0;
+}
+
+.md-task-list-item {
+    padding-left: 1.25rem;
+}
+
+.md-task-list-item > input {
+    top: auto;
+}
+
+.md-task-list-item > input:before {
+    content: "";
+    display: inline-block;
+    width: 0.875rem;
+    height: 0.875rem;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #b8bfc6;
+    background-color: #363B40;
+    margin-top: -0.4rem;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before {
+    content: '\221A';
+    /*◘*/
+    font-size: 0.625rem;
+    line-height: 0.625rem;
+    color: #DEDEDE;
+}
+
+.CodeMirror-gutters {
+    background: transparent;
+    background: var(--bg-color);
+    border-right: 1px solid transparent;
+}
+
+/** quick open **/
+.auto-suggest-container {
+    border: 0px;
+    background-color: #525C65;
+}
+
+#typora-quick-open {
+    background-color: #525C65;
+}
+
+#typora-quick-open input{
+    background-color: #525C65;
+    border: 0;
+    border-bottom: 1px solid grey;
+}
+
+.typora-quick-open-item {
+    background-color: inherit;
+    color: inherit;
+}
+
+.typora-quick-open-item.active,
+.typora-quick-open-item:hover {
+    background-color: #4D8BDB;
+    color: white;
+}
+
+.typora-quick-open-item:hover {
+    background-color: rgba(77, 139, 219, 0.8);
+}
+
+.typora-search-spinner > div {
+  background-color: #fff;
+}
+
+#write pre.md-meta-block {
+    border-bottom: 1px dashed #ccc;
+    background: transparent;
+    padding-bottom: 0.6em;
+    line-height: 1.6em;
+}
+
+.btn,
+.btn .btn-default {
+    background: transparent;
+    color: #b8bfc6;
+}
+
+.ty-table-edit {
+    border-top: 1px solid gray;
+    background-color: #363B40;
+}
+
+.popover-title {
+    background: transparent;
+}
+
+.md-image>.md-meta {
+    color: #BBBBBB;
+    background: transparent;
+}
+
+.md-expand.md-image>.md-meta {
+    color: #DDD;
+}
+
+#write>h3:before,
+#write>h4:before,
+#write>h5:before,
+#write>h6:before {
+    border: none;
+    border-radius: 0px;
+    color: #888;
+    text-decoration: underline;
+    left: -1.4rem;
+    top: 0.2rem;
+}
+
+#write>h3.md-focus:before {
+    top: 2px;
+}
+
+#write>h4.md-focus:before {
+    top: 2px;
+}
+
+.md-toc-item {
+    color: #A8C2DC;
+}
+
+#write div.md-toc-tooltip {
+    background-color: #363B40;
+}
+
+.dropdown-menu .btn:hover,
+.dropdown-menu .btn:focus,
+.md-toc .btn:hover,
+.md-toc .btn:focus {
+    color: white;
+    background: black;
+}
+
+#toc-dropmenu {
+    background: rgba(50, 54, 59, 0.93);
+    border: 1px solid rgba(253, 253, 253, 0.15);
+}
+
+#toc-dropmenu .divider {
+    background-color: #9b9b9b;
+}
+
+.outline-expander:before {
+    top: 2px;
+}
+
+#typora-sidebar {
+    box-shadow: none;
+    border-right: 1px dashed;
+    border-right: none;
+}
+
+.sidebar-tabs {
+    border-bottom:0;
+}
+
+#typora-sidebar:hover .outline-title-wrapper {
+    border-left: 1px dashed;
+}
+
+.outline-title-wrapper .btn {
+    color: inherit;
+}
+
+.outline-item:hover {
+    border-color: #363B40;
+    background-color: #363B40;
+    color: white;
+}
+
+h1.md-focus .md-attr,
+h2.md-focus .md-attr,
+h3.md-focus .md-attr,
+h4.md-focus .md-attr,
+h5.md-focus .md-attr,
+h6.md-focus .md-attr,
+.md-header-span .md-attr {
+    color: #8C8E92;
+    display: inline;
+}
+
+.md-comment {
+    color: #5a95e3;
+    opacity: 1;
+}
+
+.md-inline-math g,
+.md-inline-math svg {
+    stroke: #b8bfc6 !important;
+    fill: #b8bfc6 !important;
+}
+
+[md-inline='inline_math'] {
+    color: #9CB2E9;
+}
+
+#math-inline-preview .md-arrow:after {
+    background: black;
+}
+
+.modal-content {
+    background: var(--bg-color);
+    border: 0;
+}
+
+.modal-title {
+    font-size: 1.5em;
+}
+
+.modal-content input {
+    background-color: rgba(26, 21, 21, 0.51);
+    color: white;
+}
+
+.modal-content .input-group-addon {
+    background-color: rgba(0, 0, 0, 0.17);
+    color: white;
+}
+
+.modal-backdrop {
+    background-color: rgba(174, 174, 174, 0.7);
+}
+
+.modal-content .btn-primary {
+    border-color: var(--primary-color);
+}
+
+.md-table-resize-popover {
+    background-color: #4B535A;
+}
+
+.form-inline .input-group .input-group-addon {
+    color: white;
+}
+
+#md-searchpanel {
+    border-bottom: 1px dashed grey;
+}
+
+/** UI for electron */
+
+.context-menu,
+#spell-check-panel,
+#footer-word-count-info {
+    background-color: #42464A;
+}
+
+.context-menu.dropdown-menu .divider,
+.dropdown-menu .divider {
+    background-color: #777777;
+}
+
+footer {
+    color: inherit;
+}
+
+@media (max-width: 1000px) {
+    footer {
+        border-top: none;
+    }
+    footer:hover {
+        color: inherit;
+    }
+}
+
+#file-info-file-path .file-info-field-value:hover {
+    background-color: #555;
+    color: #dedede;
+}
+
+.megamenu-content,
+.megamenu-opened header {
+    background: var(--bg-color);
+}
+
+.megamenu-menu-panel h2,
+.megamenu-menu-panel h1,
+.long-btn {
+    color: inherit;
+}
+
+.megamenu-menu-panel input[type='text'] {
+    background: inherit;
+    border: 0;
+    border-bottom: 1px solid;
+}
+
+#recent-file-panel-action-btn {
+    background: inherit;
+    border: 1px grey solid;
+}
+
+.megamenu-menu-panel .dropdown-menu > li > a {
+    color: inherit;
+    background-color: #2F353A;
+    text-decoration: none;
+}
+
+.megamenu-menu-panel table td:nth-child(1) {
+    color: inherit;
+    font-weight: bold;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(1) {
+    color: white;
+}
+
+.modal-footer .btn-default, 
+.modal-footer .btn-primary,
+.modal-footer .btn-default:not(:hover) {
+    border: 1px solid;
+    border-color: transparent;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    color: white;
+    border: 1px solid #ddd;
+    background-color: inherit;
+}
+
+.modal-header {
+    border-bottom: 0;
+}
+
+.modal-footer {
+    border-top: 0;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+    border: 1px solid #eee;
+    background: transparent;
+}
+
+.mouse-hover .toolbar-icon.btn:hover,
+#w-full.mouse-hover,
+#w-pin.mouse-hover {
+    background-color: inherit;
+}
+
+.typora-node::-webkit-scrollbar {
+    width: 5px;
+}
+
+.typora-node::-webkit-scrollbar-thumb:vertical {
+    background: rgba(250, 250, 250, 0.3);
+}
+
+.typora-node::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(250, 250, 250, 0.5);
+}
+
+#w-unpin {
+    background-color: #4182c4;
+}
+
+#top-titlebar, #top-titlebar * {
+    color: var(--item-hover-text-color);
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+#footer-word-count:hover,
+.ty-show-word-count #footer-word-count {
+    background: #333333;
+}
+
+#toggle-sourceview-btn:hover {
+    color: #eee;
+    background: #333333;
+}
+
+/** focus mode */
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: #686868 !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus) img,
+.on-focus-mode .md-task-list-item:not(.md-focus-container)>input {
+    opacity: #686868 !important;
+}
+
+.on-focus-mode li[cid]:not(.md-focus-container){
+    color: #686868;
+}
+
+.on-focus-mode .md-fences.md-focus .CodeMirror-code>*:not(.CodeMirror-activeline) *,
+.on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * {
+    color: #686868 !important;
+}
+
+.on-focus-mode .md-focus,
+.on-focus-mode .md-focus-container {
+    color: #fff;
+}
+
+.on-focus-mode #typora-source .CodeMirror-code>*:not(.CodeMirror-activeline) * {
+    color: #686868 !important;
+}
+
+
+/*diagrams*/
+#write .md-focus .md-diagram-panel {
+    border: 1px solid #ddd;
+    margin-left: -1px;
+    width: calc(100% + 2px);
+}
+
+/*diagrams*/
+#write .md-focus.md-fences-with-lineno .md-diagram-panel {
+    margin-left: auto;
+}
+
+.md-diagram-panel-error {
+    color: #f1908e;
+}
+
+.active-tab-files #info-panel-tab-file,
+.active-tab-files #info-panel-tab-file:hover,
+.active-tab-outline #info-panel-tab-outline,
+.active-tab-outline #info-panel-tab-outline:hover {
+    color: #eee;
+}
+
+.sidebar-footer-item:hover,
+.footer-item:hover {
+    background: inherit;
+    color: white;
+}
+
+.ty-side-sort-btn.active,
+.ty-side-sort-btn:hover,
+.selected-folder-menu-item a:after {
+    color: white;
+}
+
+#sidebar-files-menu {
+    border:solid 1px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.79);
+    background-color: var(--bg-color);
+}
+
+.file-list-item {
+    border-bottom:none;
+}
+
+.file-list-item-summary {
+    opacity: 1;
+}
+
+.file-list-item.active:first-child {
+    border-top: none;
+}
+
+.file-node-background {
+    height: 32px;
+}
+
+.file-library-node.active>.file-node-content,
+.file-list-item.active {
+    color: white;
+    color: var(--active-file-text-color);
+}
+
+.file-library-node.active>.file-node-background{
+    background-color: rgb(34, 34, 34);
+    background-color: var(--active-file-bg-color);
+}
+.file-list-item.active {
+    background-color: rgb(34, 34, 34);
+    background-color: var(--active-file-bg-color);
+}
+
+#ty-tooltip {
+    background-color: black;
+    color: #eee;
+}
+
+.md-task-list-item>input {
+    margin-left: -1.3em;
+    margin-top: 0.3rem;
+    -webkit-appearance: none;
+}
+
+.md-mathjax-midline {
+    background-color: #57616b;
+    border-bottom: none;
+}
+
+footer.ty-footer {
+    border-color: #656565;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h1><a name='header-n4' class='md-header-anchor '></a>产品介绍</h1><h2><a name='header-n5' class='md-header-anchor '></a>产业地图</h2><p>&nbsp;</p><h2><a name='header-n7' class='md-header-anchor '></a>数据中台</h2><p>&nbsp;</p><h2><a name='header-n9' class='md-header-anchor '></a>智能招商</h2><p>&nbsp;</p><h2><a name='header-n11' class='md-header-anchor '></a>智慧人才</h2><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h1><a name='header-n16' class='md-header-anchor '></a>其他</h1><h2><a name='header-n17' class='md-header-anchor '></a>常用术语</h2><h3><a name='header-n18' class='md-header-anchor '></a>CRO、CMO、CSO、CRAO</h3><p><span>	</span>CRO、CMO、CSO分别服务于医药行业的研发试验、生产、销售三大环节；CRO的工作可以覆盖新药研发及试验的各个环节，按照覆盖的药物研发环节的不同，CRO又可以分为临床前CRO和临床CRO。
+​<span>	</span>CMO提供产品生产时所需要的工艺开发、配方开发、临床试验用药、化学或生物合成的原料药生产、中间体制造、制剂生产(如粉剂、针剂)以及包装等服务。
+​<span>	</span>CSO提供产品或服务的销售和市场营销方面提供全面的专业帮助。在中国新医改及当前核查出厂价的大环境下，CSO对中国制药企业的良性发展有着极其重要的借鉴作用。
+CRAO是专业从事药品注册及各种医药法规符合事务的服务机构。</p><h3><a name='header-n20' class='md-header-anchor '></a>蹬羚企业</h3><p>    蹬羚企业是银行对成长性好、具有跳跃式发展态势的高新技术企业的一种通称。“瞪羚”是一种善于跳跃和奔跑的羚羊，业界通常将高成长中小企业形象地称为“瞪羚企业”，一个地区的“瞪羚企业”数量越多，表明这一地区的创新活力越强，发展速度越快。</p><h3><a name='header-n22' class='md-header-anchor '></a>G20工程（企业）</h3><p><span>	</span>G20工程是北京市政府于2010年4月23日启动的北京生物医药产业跨越发展工程，意在推动北京生物医药产业成为首都具有战略意义的支柱产业。其中，“G”代表“Great（伟大）”，“20”则意味着“二八”法则中最核心的“20%”。“<a href='https://baike.baidu.com/item/G20%E5%B7%A5%E7%A8%8B'>G20工程</a>”核心是“聚焦支持一批规模企业，培育一批潜力企业，引进一批国内外重点企业”，使“G20”成为北京生物医药产业的标志，打造一批北京有规模、全国有地位、世界有声音的代表企业。“G20工程”立足北京在科技、人才、市场等方面的突出优势，建设一批“国际化、高水平、有规模”的公共服务平台，重点建设拥有核心技术、达到国际先进水平的“专、精、特”发展的生物医药“代工线”，为北京生物医药创新成果孵化和产品规模化生产等提供服务支撑。目前，“G20工程”已先后认定三批，包括规模企业、潜力企业和引进企业在内的“G20企业”共50家。</p><h2><a name='header-n24' class='md-header-anchor '></a>常见问题</h2><h3><a name='header-n25' class='md-header-anchor '></a>1、千万客单的突破路径</h3><p>    对于政府客户而言，我们客单价过千万有几个可能途径: 
+1）做省级/市级平台，包括：数据中台，产业地图，创新服务平台，招商系统，人才系统。其中 3 个模块突破 1000 万。
+2）系统+咨询+品牌传播(会议)，帮助区域政府发展产业的整体解决方案。 
+3）深耕客户是非常关键的，我们期待通过对客户需求的深入了解以及相互信任，在一个客户上突破 1000 万。 </p><h3><a name='header-n27' class='md-header-anchor '></a>2、火石相比咨询机构的优势</h3><p><span>	</span>一个地区发展生物医药产业，需要有理念先进、方向正确、目标切实、落地可行的规划作为指引，才能做到工作系统推进、路径清晰明确、目标分解落实。
+​<span>	</span>规划的制定与落实有两条工作主线，一条是保证规划目标与任务能够切实可行的数据主线，通过“梳理数”，明确产业基础与形势，通过“确定数”，制定可执行的目标，通过“落实数”，确定重点任务与工程。另一条是能够保证任务与项目落地的实施主线，通过要素可汇聚—机会可识别—项目可评估—资源可匹配—企业可成长的一体化解决平台，保证规划的推进与实施。
+​<span>	</span>因此，如果一家咨询机构，即使是国际知名的大咨询机构，没有广覆盖、深层次的数据能力，仅凭丰富的案例资源，只能形成共性化的产业见解，而不能真正形成特色化的产业洞见，触及区域生物医药产业发展的核心关键。另一方面，即使国际咨询机构也多以报告交付为主，不是区域产业发展的平台解决商，不能为地区形成一体化的解决方案实施能力。围绕规划的两条工作主线，火石的规划优势体现于:
+​<span>	</span>一是具有专业化、广覆盖、深层次的数据库，我们的数据库在广度上进行了细分领域的覆盖，在深度上进行了多维度的分类，特别是创新资源、创新成果、创新投入、产业融资的深层次覆盖，能够支撑将生物医药领域的共性规律与区域发展的特色要素相结合进行分析。同时，火石正在建设的中国生物医药产业综合指数，能够进行产业坐标分析，从经济、创新、资金、空间、政策定位地区在全国的产业坐标位置，并结合产业图谱，将产业共性与区域个性结合，厘清区域生物医药产业发展的目标。
+​<span>	</span>二是具有聚合、孵化与转化的平台一体能力。火石真正意义上不是一家咨询方案􏰀供商，而是一家产业平台解决方案􏰀供商。规划是方向指引，落实和实施是关键。火石能够以产业研究院为切入点，形成资源汇聚，以产业大脑为引擎，构建生物医药产业数字化指挥系统，以创新服务平台为支撑，链接资源服务产业，以招商平台为依托，为地区产业发展注入增量，以企业云平台为延伸，深度服务业内企业。因此，火石能够􏰀供产业资源汇聚、链接与服务的一体化服务，实现从G端到B端、从面到点的全方位服务。我们不仅是洞察产业，更是以BT+IT结合的方式真正形成闭环一体化的产业服务集成体系，为各地区􏰀供“顶天立地”的规划服务。</p><h3><a name='header-n29' class='md-header-anchor '></a>3、火石数据来源及保密性</h3><p><span>	</span>火石的产业大脑数据包含了官方数据、第三方商业数据和公开数据，不包含因为咨询项目或为国家部委开展产业监测而获得的数据，所以火石产业大脑能够􏰀供的都是合法合规的阳光数据，任何隐私数据都会因为火石自身数据安全规则和保密协议等原因，不会向任何政府和第三方􏰀供。所以，从这个角度，跨园区能够产生对标的数据或产业情报，均源于火石对产业理解和数据加工能力之下的非敏感、非隐私数据。</p><h3><a name='header-n31' class='md-header-anchor '></a>4、智能招商平台的独特价值</h3><p><span>	</span>像有些重点城市属于竞争优势较好的地方，这些地方有不缺招商资源，也拥有较健全的招商渠道。所以这些地方有以下需求点：1）相对缺空间资源，慕名而来企业较多，需要遴选项目，有项目评估的需求;2）这些地方对标的是上海张江、北京、甚至是波士顿等地方，他们的痛点是怎么从这些顶级的地方找优质项目或者高端人才团队;3）可能有对外输出招商服务的需求;4）可能有招商流程信息化的需求。</p><h3><a name='header-n33' class='md-header-anchor '></a>5、创新服务平台特色化和一般化的平衡</h3><p><span>	</span>地方建设公共服务平台要能够满足和支撑地方的产业定位及发展路径。创新服务平台的建设和运营，应根据当地产业特点确定资源集聚和产业链在线协同服务的切入点或者重点，比如上海的 CRO 研发服务，南京的基因测序。 但创新服务平台的功能框架是类似的，一般都包括一站式创新资源在线服务、创业投资服务，专利、论文、人才等科技资源或基础信息服务，培训会议等增值服务，项目申报、政策发布解读等政企互动服务。根据当地产业特点确定重点服务领域后，关键是通过线下运营集聚服务资源、吸引企业需求方上线，开展供需匹配、对接并进一步实现在线交易和服务过程协同。</p><h3><a name='header-n35' class='md-header-anchor '></a>6、如何保障数据安全性</h3><p><span>	</span>火石创造是一个大数据公司，确保数据的安全是公司最重要的事情，火石创造一直将保护客户数据隐私和数据安全视作生命线。公司建设了完备的数据安全防护体系，并在2018年9月通过了公安部信息系统安全第三级认证，这也是是非金融机构的最高水平。火石创造跟所有客户的合作，在数据的存储上都采取了一个客户一个专有数据仓库的方式，确保所有的客户之间的数据做到完全的隔离，同时在火石创造内部的数据体系上也建立了相应的机制，确保数据访问、开发和审计各环节的独立性，并有专门的数据安全部门负责全生命周期的数据安全工作。同时火石创造也在不断的进行数据安全方面的探索，如通过结合区块链的智能合约技术，做到对于数据处理的过程监管，为火石创造的数据筑起一道坚实的技术防火墙。</p><h2><a name='header-n37' class='md-header-anchor '></a>好文欣赏</h2><h3><a name='header-n38' class='md-header-anchor '></a>1、数字经济促进生物经济发展</h3><p>——产业大脑助力打造世界一流生物医药产业集聚区</p><p><span>	</span>生物经济正成为继信息经济后新的经济形态，全球的生物经济发展已逐步形成了以美国、欧洲为代表的生物经济体，中国生物经济也处于快速发展的阶段，有望在这一轮的竞争中取得更好的位置，引领全球。生物经济正成为继信息经济后新的经济形态，全球的生物经济发展已逐步形成了以美国、欧洲为代表的生物经济体，中国生物经济也处于快速发展的阶段，有望在这一轮的竞争中取得更好的位置，引领全球。从全球的生物经济发展特点看，集聚发展是生物经济发展的主要形态，不论是在美国、欧洲、还是以色列，企业、团队、人才、技术都是扎堆出现，形成了美国东部的波士顿地区、西部的湾区、欧洲莱茵河畔等世界一流的生物医药产业集聚区。</p><p><span>	</span>如果将这些地区的生物经济产业发展过程结构化、数字化，我们发现一些共同的特点，他们通过高效的组织协同和资源共享，使得企业、团队、人才、市场在这里繁荣发展了起来。这种模式特别适合生物经济的发展，因为生物经济本质上是知识经济、知识红利的效应。</p><p><span>	</span>今天，中国面临生物经济发展的重要历史机遇。市场的需求刚性与政策的支持力度，无论是越来越重视的医疗和健康服务的需求，还是ICH、MAH、健康2030，都为产业的创新和发展提供了良好基础。如何发展中国的生物经济？如何用数字经济加速生物经济的发展？如何通过大数据和人工智能来解决生物经济中的组织协同、资源共享、整合、交流的问题，从而实现产业发展的指数级增长？</p><p><span>	</span>这些都是国家政策制定者和生物领域产业园区负责人共同关心的话题。本月26日，在武汉光谷举办的“打造世界一流的生物医药产业园区”闭门研讨会分享国外一流园区的实践研究，探讨我国各地在打造世界一流园区方面的形势、举措和问题，以及如何以数字经济加速生物经济的快速发展等话题，拟探索一条适合新形势和我国国情的产业发展路径。本次会议由火石创造和中国宏观经济研究院产业经济与技术经济研究所（简称宏观院）联合主办，国家发改委高技术司领导参加。</p><p><span>	</span>本次闭门会上，来自北京、上海、武汉、成都、杭州、南京、石家庄、重庆等地的数十位园区负责人将分享各自的经验，宏观院的姜江主任和火石创造的创始人杨红飞也将分享自己的研究和思考。另外，作为闭门会的亮点之一，我国的生物医药产业地图将在现场互动展示。产业地图是火石创造大健康产业大脑的核心组件，帮助国家、地方政府和园区摸清产业家底、实时监测区域产业运行情况的数字化指挥系统。从世界领先地区的经验来看，在产业集聚区形成的早期，政府的顶层设计和政策引导非常关键，而精准施策的前提是要有数据为支撑，因此产业地图是进行顶层规划和政策制定的基础。</p><p><span>	</span>目前，火石创造已经初步形成了全球生物经济的运行数据，基于大数据和人工智能技术，全球首创大健康产业大脑，包括大健康产业地图、智能招商、智慧人才、产业情报、产业综合服务平台等组件。进一步通过将生物经济中的各个元素和组织进行数字化，实现生物经济发展资源的匹配智能化，交易在线化。据悉，北京、上海、成都、台州等生物医药产业较发达的地区均已完成产业大脑部分组件的建设和应用。</p><p><span>	</span>大健康产业大脑不仅为政府、园区提供服务，同时为企业提供服务，最终产业的发展还是要落地在企业的发展上。比如为企业提供的企业大数据情报系统，能够实时全面整合产业内全球专利、期刊、临床、科研、产业、政策、市场、竞品等信息，形成大数据可视化，为企业研发、市场营销拓展、战略决策服务。</p><h3><a name='header-n47' class='md-header-anchor '></a>2、中国数字经济发展思考探析</h3><p><strong>摘要</strong>：数字经济已成为中国新时代建设现代化经济体系的重要动力。文章基于数字经济的基本内涵，对数字经济与信息经济、网络经济的概念进行辨析，总结数字经济的特征及发展态势，剖析中国发展数字经济面临的关键基本问题，并提出应对建议。</p><p><strong>关键词</strong>：数字经济；数字强国；发展战略</p><p>中国在数字经济领域已取得的成就举世瞩目，但中国与发达国家之间的数字鸿沟仍然显著。数字经济既是新一轮产业变革的关键领域，又涉及国家的长治久安，我国要建设数字强国，建立相应的现代产业体系，应重视全球数字竞争中科技和产业发展面临的问题，破解数字经济发展瓶颈，构建数字经济创新和发展政策支持体系。基于此，本文对中国发展数字经济面临的关键基本问题进行剖析，并提出应对建议。</p><p><strong>一、数字经济的内涵与特征</strong></p><p><span>	</span>1.数字经济的内涵。自泰普斯科特1995年在《数字经济》一书中最先提出“数字经济时代”至今已有二十多年，政产学研各界对数字经济的概念及内涵并无统一认识，从而难以测度数字经济的规模、辨识数字经济发展现状及影响。美国商务部先后出版《浮现中的数字经济》《新兴的数字经济》《数字经济2000》《再度崛起的数字经济》等多本数字经济年度报告，从有利于统计和测算的角度来界定数字经济概念。英国学者Miller和Wilsdon（2001）则认为数字经济不应局限在技术融合及电子商务层面，将其理解为一场技术革命，通过技术融合、产业赋能出现的一种新的经济形态。同国际相比，国内对数字经济的理论研究较少。媒体及许多地方政府也经常将几种概念等同使用，研究者也大多认为以计算机、网络、通信等为代表的现代信息技术革命催生了数字经济，与网络经济、信息经济等各自从某一特定方面来反映经济的特征，仅是提法不同，没有实质区别（例如：乌家培，1998；张新红，2016等）。我们认为数字经济是指以数字化信息为核心生产要素，以信息技术为支撑，以现代信息网络为主要载体，以数字化技术提供产品或服务，是技术融合、产业融合、生产者与消费者融合的新型经济形态。信息经济、网络经济与数字经济并不相同，主要体现在：首先，从三种经济形态的广度来看，<strong>网络经济与互联网的兴起密切相关，更多指生产方式的变化，更强调计算机网络的作用</strong>，并将基于国际互联网的电子商务作为核心内容。信息经济涉及与生产、分配信息商品及服务相关的经济活动，<strong>强调信息要素在作为经济活动的重要投入和产出的同时，又作用于生产过程</strong>。而数字经济则<strong>突出了整个经济领域的数字化</strong>，数字经济更加关注数字化的信息在经济中的作用，属于信息经济的一部分。在概念的广度上，信息经济大于数字经济，数字经济又大于网络经济。其次，从三种经济形态出现的顺序看，“数字经济”只是当科技进步和经济发展达到一个更高级的阶段时，对即将或者已经出现的新的经济形态的称谓。信息经济形成于20世纪70年代，而网络经济在20世纪90年代出现并加速了人类向数字经济时代过渡，数字经济是在之前的网络经济和信息经济基础上发展起来的，并非对“信息经济”“网络经济”的否定。
+​<span>	</span>2.数字经济的特征。总的来看，数字经济可分为四个基本分层，包括技术层、要素层、产业层和治理层.从实际测度的角度，数字经济具体产业范围可分为两个部分，一是狭义的信息产业，包括电子信息制造业、软件和信息技术服务业；二是信息产业与其他产业的交叉和融合部分。与传统经济相比，数字经济具有四大主要特征：一是数字化。数字技术渗透到生产、分配、交换和消费等社会再生产全部环节，数字技术的发展不仅促使传统产业改造升级，也不断催生出新产业、新技术、新产品、新业态。二是效率性。数字技术通过降低信息获取成本使经济社会发展中的交易成本大大降低，经济活动更少受到时间和空间因素制约，技术创新、技术扩散、产品开发和价值创造快速迭代；三是普惠性。与传统经济相比，数字技术使经济增长、就业和公共服务水平大幅提高，平台成为数字经济惠及企业及个人用户的重要方式，无论是公共部门还是私人部门均从中受益。四是融合性。数字化导致产业融合、产消融合。在供给侧，数字技术在产业间高度渗透，信息技术产业与三次产业的细分行业日益融合，新兴产业和新型业态不断涌现，产业边界越来越模糊。在需求侧，数字经济下的商业模式以消费者为中心，消费者广泛参与到产品价值链中的研发、制造和营销等环节，消费者变为“产消者”。</p><p><strong>二、全球数字经济的发展态势</strong></p><p><span>	</span>1.总体发展态势。从技术进展看，随着云计算技术的数据处理能力更加强大、5G网络和卫星网络技术的产业化，以及物联网技术及操作系统的新突破将推动以大数据和算法为核心的人工智能技术发展，从而进一步推动区块链、生物识别、VR/AR等多种数字技术的成熟，新技术的跨界融合趋势最终还将导致数字技术与航空、材料、生物、能源等融合之后产生未知技术。从产业发展看，家庭部门在经济上参与的广度、频度和深度日益提升，企业部门的生产经营活动决策完全以用户为中心，大数据、物联网和云计算等各种数字技术大面积渗透到传统行业，制造业与服务业都发生本质性的变化，各个产业的发展将越来越数字化、智能化、智慧化，由此带来的社会效益甚至可能远远超过其创造的行业价值。从全球主要发达经济体的经济发展战略看，世界各国不约而同地将数字经济作为提高国家竞争力的战略重点，并纷纷出台各自的数字经济发展战略与政策。2016年，中国作为G20主席国，首次将“数字经济”列为G20创新增长蓝图中的一项重要议题，促成通过《二十国集团数字经济发展与合作倡议》。总体而言，随着新技术的研发与应用不断取得突破，尽管数字经济的迅猛发展伴随着一定的负外部性，但数字经济也促使世界各国经济社会各个领域发生深刻变革，成为经济社会发展的重要动力。
+​<span>	</span>2.中国数字经济发展现状：规模大、增速快、渗透不均衡。2015年以来，中国相继出台《促进大数据发展行动纲要》《国家信息化发展战略纲要》《“十三五”国家信息化规划》等一系列文件，就如何应对以互联网为核心的新一轮产业革命对国内国外两个市场作出了全方位的战略部署。在国内，“大力实施网络强国战略、国家大数据战略、‘互联网+’行动计划，推进‘数字中国’建设”。国际上，倡议建设21世纪数字丝绸之路，与其他国家加强发展战略对接，探索建立多边、透明、包容的数字领域国际贸易规则。在国家政策的支持和保障下，数字经济在经济发展中的引领和主导作用不断增强，数字经济总体上呈现出“规模大、增速快、渗透不均衡”的特点。从规模看，中国数字经济增长迅速，已位居世界第二位。中国信息化百人会课题组从产业分类的角度利用投入产出法测算数字经济规模，得出我国2016年的数字经济规模达22.4万亿元人民币，仅次于美国。腾讯研究院的研究报告则利用“互联网+”数字经济指数建立回归模型，由此估算出2016年全国数字经济总体量大约为22.77万亿元。由于对数字经济的边界认识不同，测算规模的方法也各有优劣势，加之我国ICT技术与相关产业正处于飞速发展期，数字经济规模难以准确衡量。渗透度方面，地区渗透和行业渗透均呈显著的非均衡特征。从最基本的数字基础设施看，截至2017年6月，中国互联网普及率为54.3%，超过全球平均水平4.6个百分点。如果不考虑东西部及城乡间的数字鸿沟，与国外相比，渗透的广度在总体上已经初步具有比较优势。但数字化技术渗透的深度仍有待提高，国家信息化发展指数2016年排名世界第25位，大大低于世界主要发达经济体。而诸如机器人普及率等一些主要的渗透率指标尚低于世界平均水平，更远低于世界主要发达国家。如果将数字经济分为信息数字化、数字化转型、经济智能化三个发展阶段，我国当前正处于数字化转型阶段。以中国的市场容量和发展速度来说，数字经济的规模未来肯定是世界首位，因此，过多关注数字经济的规模，意义不大。现阶段发展数字经济应重点聚焦于如何提高数字化技术在我国经济社会的渗透度、提升数字经济对我国发展新动能的贡献率。</p><p><strong>三、中国发展数字经济面临的基本问题</strong></p><p><span>	</span>数字经济已成为推动经济社会深刻变革的重要动力，在新一轮科技革命和产业革命兴起的时间窗，如果对数字经济的影响认识不够，依然用工业经济时代的思维思考问题，将难以解决当今我国经济社会发展面临的许多难题。总体来看，未来数字竞争中，发展中国家将总体处于相对不利地位，中国也面临一系列新问题，主要表现在：
+​<span>	</span>1.数字经济的基础理论研究大大滞后于指导经济发展的需要。主要体现在：一是数字经济的概念、内涵与分类界定涉及数字经济的统计问题，是研究数字经济的基础，但目前对数字经济的概念与内涵并无统一认识，从而既难以准确认识数字经济对我国经济社会发展的影响，也难以评估国家的相关发展战略和政策对数字经济发展的影响。同时，既有研究惯于用数字经济产出在GDP中所占比重或就业人数在总就业人数中所占比重来认识和判断其发展状况，但这仅能反映数字经济的一个侧面，究竟应如何度量数字经济？二是现有的相关研究多注重于对发达国家与我国现状的比较，鲜有关注数字经济下治理创新方面的研究。数字经济下大量颠覆性创新的出现对已有经济学理论和治理理论形成挑战，亟需理论研究者作出回答。
+​<span>	</span>2.数字经济的飞速发展同传统工业经济时代治理体系之间的矛盾突出。数字经济的发展必然带来生产关系的深刻变革，政府治理能力和治理水平应具有相应的调整。但现阶段，数字经济的发展大大领先于制度规范，传统工业经济的治理制度和体系的改革过于滞后。一是信用体系的全面确立。当前中国尚未确立起有效的社会信用体系，社会信用体系建设大大滞后于中国的工业化与城镇化进程，已成为制约当代中国经济社会稳定与发展最为关键的问题之一。二是新型产权问题。数据的开放共享与个人隐私保护形成严重冲突，同时，数字经济的海量数据及创新迭代快速等特征使得传统的知识产权管理方式失灵，如何确立数据产权、保护知识产权？三是如何在激励与规制中取得平衡？比如税收政策中，对小微企业征税时如何处理公平与效率的问题以及平台的责任界定问题；共享经济等新业态本来就具有网络外部性特征，要求规模效应，怎么认定垄断？传统的规制工具已不适用，亟需作出调整。
+​<span>	</span>3.数字经济的产品与服务的标准和规范滞后于数字化创新的时代需求。与传统经济相比，数字经济对其产品与服务的标准规范的前瞻性、及时性要求更高。一是数字经济下层出不穷的新技术具有信息不对称的特点，会导致人身安全等问题。例如由于智能设备异质化、结构扁平化和设备接入的海量化，车联网中的汽车极易受到远程攻击。二是数字技术创新往往会引发文化、社会伦理和认知等层面的巨大争议。以大数据产业为例，即使在数据交易与应用前对数据进行脱敏处理，但从技术角度看，看似不泄密的数据也可以通过信息挖掘转化为能够辨识的个人隐私信息。三是工业经济时代，我国在国际标准、规范制定上一直处于被动局面，需在数字经济时代抓住机遇，掌握更多领域标准规范制定的主导权。
+​<span>	</span>4.新兴市场国家参与全球数字经济竞争面临潜在的“数字北约”威胁。发达经济体间信息和数据流的连接程度是新兴经济体的九倍，而欧洲与北美之间的连接在所有大洲之间最为密切，美国从欧盟进口的数字赋能服务中一半以上用于生产美国出口产品，反之亦然。欧美双方互为彼此最大数字贸易伙伴，美欧双方极可能在全球数字经济竞争中联手构建“数字北约”，从而使中国等新兴市场国家在全球数字经济竞争中处于不利地位。例如，2016年，由谷歌、亚马逊等40家科技公司组成的美国互联网协会就曾向当时的候任总统特朗普发出公开信，建议美国应积极与欧盟磋商建立跨大西洋数字一体化市场，试图进一步掌控网络空间国际治理体系主导权。</p><p><strong>四、新时代建设数字中国的关键点</strong></p><p>1.加强数字经济理论研究。数字经济的迅猛发展已对现有的经济理论产生挑战，比如经济学理论追求充分信息，然而数据的开放共享却会导致隐私保护问题；再比如信息消费对人类社会的影响已经如此之大，但如何界定并统计存在理论上的困难。加强数字经济相关理论研究，首要的是在数字经济的内涵、分类等基本的界定以及数字经济的统计口径、规模测度等方面取得共识。以此为基础，在宏观经济、公共选择、产业规制、公司治理、消费者理论等各个领域，深化现有理论对数字经济下的发展问题和规制问题的认识，为数字经济发展政策、企业决策和消费者选择提供理论支撑。
+2.发展和规制并重。信用制度和产权制度是一个社会平稳运行的基本制度。与传统工业经济相对封闭的信息流相比，数字经济时代的海量数据恰好成为健全信用和产权制度的基础设施和有力武器。中国需抓住机遇，一方面加快征信机构和征信数据库的建设，健全失信惩戒机制，建立系统的信用法律体系。另一方面，加快立法进程，明晰数据产权。数据带来的产权确认、隐私保护等问题已成为中国推进国家大数据战略的重要瓶颈，亟需对数据保护进行专项立法，建立健全数据保护的制度体系，在发展中加以规制，促进大数据、物联网等相关产业健康持续发展。
+3.苦练全球数字竞争的“杀手锏”，掌握数字经济新标准制定主导权。只有及时制定数字经济的产品和服务的标准规范，相关数据、资源才能够得到充分共享，细分领域的开发工作才不会出现重复和浪费。同时，在数字经济标准制定中需注重掌握国际话语权和主导权。我国如何在全球数字经济新标准制定中掌握主导权？针对此类问题，习近平总书记指出，“要采取‘非对称’战略，更好发挥自己的优势”。在全球数字竞争中，中国应追求非对称发展，苦练自己的“杀手锏”，比如，大力强化5G等领域的优势。中国在提出规则后，一方面要进一步加强关键核心技术研发，另一方面还要加速培育全产业链，大力发展车联网、工业机器人等产业，尽快实现城市商用。
+4.利用好“一带一路”建设的重要机遇，强化与欧美的数字合作。尽管美国和欧盟之间具有构建跨大西洋数字一体化市场的可能性，但双方也存在激烈竞争，同时美欧合作还面临欧盟的数字化单一市场战略、欧盟数据保护政策、欧盟—美国隐私保护法案以及英国脱欧等难题。中国应利用机会，加强与欧美的发展战略对接，并在增强同美国的数字合作的同时，抓住“一带一路”建设的机遇，重点强化与欧盟、英国等经济体之间的合作，推动中欧信息基础设施合作和数字技术联合研发，建立中欧数字经济领域的常规对话机制，开展中欧数字合作试点城市和示范项目，加快推进“中欧数字丝绸之路”建设。</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</body>
+</html>
